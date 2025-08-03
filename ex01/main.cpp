@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 21:58:38 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/03 23:56:23 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 int	main(void)
 {
-	Zombie	zombie1;
-	Zombie* zombie2;
+	Zombie*	zombie;
 
-	zombie2 = newZombie("Daniel");
-	zombie2->announce();
-	randomChump("Sakura");
-	delete zombie2;
+	zombie = zombieHorde(-1, "Daniel");
+	if (zombie == NULL)
+		return (1);
+	for (int i = 0; i < 4; i++)
+		zombie[i].announce();
+	delete[] zombie;
 	return (0);
 }

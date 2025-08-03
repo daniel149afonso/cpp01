@@ -8,8 +8,7 @@ INCLUDES = Zombie.hpp \
 # FICHIERS
 SRCS = main.cpp \
 	Zombie.cpp \
-	newZombie.cpp \
-	randomChump.cpp
+	zombieHorde.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

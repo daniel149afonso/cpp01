@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:49:04 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 21:33:11 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/03 23:21:41 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,10 @@ class Zombie
 	private:
 		std::string name;
 	public:
-		Zombie(){
-			this->name = "unknown";
-		}
-		Zombie(std::string name){
-			this->name = name;
-		}
-		~Zombie(){
-			std::cout << this->name << ": Destructor called\n";
-		}
+		Zombie();
+		Zombie(std::string name);
+		~Zombie();
+
 		void	announce(void);
 };
 
