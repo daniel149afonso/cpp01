@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 21:56:56 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/03 02:03:15 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie*	newZombie(std::string name)
+void	Zombie::announce()
 {
-	Zombie* zombie;
-
-	if (name.empty())
-		name = "unknown";
-	zombie = new Zombie(name);
-	return (zombie);
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
 }
+
