@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 02:29:05 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/03 18:09:09 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	main(void)
 	Zombie zombie1;
 	Zombie* zombie2;
 	
-	zombie2 = zombie1.newZombie("Chopper");
-	zombie2->randomChump("Ichigo");
-	
+	zombie2 = new Zombie("Daniel");
+	zombie2->randomChump("Sakura");
+	return (0);
 }

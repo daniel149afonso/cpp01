@@ -3,8 +3,7 @@
 NAME = zombie
 
 # HEADERS
-INCLUDES = Zombie.hpp \
-		PhoneBook.hpp
+INCLUDES = Zombie.hpp
 
 # FICHIERS
 SRCS = main.cpp \
