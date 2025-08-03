@@ -6,9 +6,14 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/01 22:59:17 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/03 02:03:15 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+void	Zombie::announce()
+{
+	std::cout << this->name << ": BraiiiiiiinnnzzzZ...\n";
+}
 
