@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 02:29:05 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/03 02:22:38 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/03 02:28:58 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(void)
+void Zombie::randomChump(std::string name)
 {
-	Zombie zombie1;
-	Zombie* zombie2;
-	
-	zombie2 = zombie1.newZombie("Chopper");
-	zombie2->randomChump("Ichigo");
-	
+	this->name = name;
+	this->announce();
 }
