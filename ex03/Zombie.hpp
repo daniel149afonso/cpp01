@@ -1,26 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/04 01:40:17 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 22:49:04 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/04 00:21:06 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
+# include <iostream> // std::string
 
-/*Stack obj non-alloué*/
-/*Heap obj alloué dynamiquement*/
-int	main(void)
+//Zombie Class
+class Zombie
 {
-	Zombie* zombie;
+	private:
+		std::string name;
+	public:
+		Zombie();
+		Zombie(std::string name);
+		~Zombie();
+		
+		void	setName(std::string name);	
+		void	announce(void);
+};
 
-	zombie = newZombie("heapZombie");
-	zombie->announce();
-	randomChump("stackZombie");
-	delete zombie;
-	return (0);
-}
+Zombie*	zombieHorde(int N, std::string name);
+
+#endif
