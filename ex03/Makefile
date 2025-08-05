@@ -1,14 +1,17 @@
 # ================== VARIABLES ==================
 # Nom de l'exécutable
-NAME = zombie
+NAME = weapon
 
 # HEADERS
-INCLUDES = Zombie.hpp \
+INCLUDES = Weapon.hpp \
+			HumanA.hpp \
+			HumanB.hpp
 
 # FICHIERS
 SRCS = main.cpp \
-	Zombie.cpp \
-	zombieHorde.cpp
+	Weapong.cpp \
+	HumanA.cpp \
+	HumanB.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

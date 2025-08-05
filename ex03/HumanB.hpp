@@ -1,16 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/04 01:41:54 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/05 15:31:31 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef HUMAN_B_HPP
+# define HUMAN_B_HPP
+# include "Weapon.hpp"
+# include "HumanA.hpp"
+# include <iostream> // std::string
 
+//HumanA Class
+class HumanB
+{
+	private:
+		std::string name;
+		
+	public:
+		void	getType();
+		void	setType();
+};
+
+#endif
 
 

@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/05 15:16:29 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/05 15:34:18 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-/*Array of zombies*/
-int	main(void)
+void	Weapon::setType(std::string type)
+{
+	this->type = type;
+}
+
+void	Weapon::getType()
 {
 	
-	return (0);
 }
+

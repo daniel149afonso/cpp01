@@ -1,20 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/05 15:16:29 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/05 15:27:05 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#ifndef HUMAN_A_HPP
+# define HUMAN_A_HPP
+# include "Weapon.hpp"
+# include "HumanB.hpp"
+# include <iostream> // std::string
 
-/*Array of zombies*/
-int	main(void)
+//HumanA Class
+class HumanA
 {
-	
-	return (0);
-}
+	private:
+		std::string name;
+		
+	public:
+		void	getType();
+		void	setType();
+};
+
+#endif
