@@ -6,13 +6,12 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/05 15:16:29 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/06 01:07:29 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 
-/*Array of zombies*/
 int	main(void)
 {
 	
