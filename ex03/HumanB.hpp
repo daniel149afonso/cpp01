@@ -6,17 +6,15 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/06 23:20:56 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/07 16:35:49 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMAN_B_HPP
 # define HUMAN_B_HPP
-# include "Weapon.hpp"
-# include "HumanA.hpp"
 # include <iostream> // std::string
+# include "Weapon.hpp"
 
-//HumanA Class
 class HumanB
 {
 	private:

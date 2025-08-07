@@ -9,7 +9,7 @@ INCLUDES = Weapon.hpp \
 
 # FICHIERS
 SRCS = main.cpp \
-	Weapong.cpp \
+	Weapon.cpp \
 	HumanA.cpp \
 	HumanB.cpp
 
