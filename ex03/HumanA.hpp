@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/06 01:30:06 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/06 23:03:40 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ class HumanA
 		std::string name;
 		Weapon weapon;
 	public:
+		HumanA(std::string name, Weapon weapon);
 		void	attack();
 };
 
