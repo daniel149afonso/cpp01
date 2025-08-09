@@ -6,13 +6,13 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/07 15:39:36 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/09 00:47:55 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
+#include "../includes/Weapon.hpp"
+#include "../includes/HumanA.hpp"
+#include "../includes/HumanB.hpp"
 
 int	main(void)
 {

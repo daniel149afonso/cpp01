@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.hpp                                         :+:      :+:    :+:   */
+/*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/07 16:35:49 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/08 23:06:52 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef HUMAN_B_HPP
-# define HUMAN_B_HPP
-# include <iostream> // std::string
-# include "Weapon.hpp"
+#include "../includes/Weapon.hpp"
 
-class HumanB
+Weapon::Weapon()
 {
-	private:
-		std::string name;
-		Weapon weapon;
-	public:
-		HumanB(std::string name);
-		void	setWeapon(Weapon weapon);
-		void	attack();
-};
+	this->type = "default";
+}
 
-#endif
+Weapon::Weapon(std::string type)
+{
+	this->type = type;
+}
 
+void	Weapon::setType(std::string type)
+{
+	this->type = type;
+}
+
+const std::string Weapon::getType()
+{
+	return (this->type);
+}
 
