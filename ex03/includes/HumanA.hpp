@@ -6,14 +6,14 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/11 15:48:00 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/13 21:45:27 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HUMAN_A_HPP
 # define HUMAN_A_HPP
 # include <iostream> // std::string
-#include "Weapon.hpp"
+# include "Weapon.hpp"
 
 class HumanA
 {
