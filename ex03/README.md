@@ -2,6 +2,7 @@
 C’est un pointeur vers un Weapon.
 Un pointeur peut être nullptr (aucune arme) au départ, et plus tard pointer vers une vraie arme.
 
+## Référence
 void HumanB::setWeapon(Weapon &weapon) {
     this->weapon = &weapon;
 }

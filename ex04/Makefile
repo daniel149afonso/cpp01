@@ -1,0 +1,40 @@
+# ================== VARIABLES ==================
+NAME     = weapon
+
+SRC_DIR  = src/
+OBJ_DIR  = objs/
+
+SRCS = $(SRC_DIR)main.cpp \
+       $(SRC_DIR)Weapon.cpp \
+       $(SRC_DIR)HumanA.cpp \
+       $(SRC_DIR)HumanB.cpp
+
+# Mettre les .o dans objs/
+OBJS = $(patsubst $(SRC_DIR)%.cpp,$(OBJ_DIR)%.o,$(SRCS))
+
+GCC = g++ -Wall -Werror -Wextra -std=c++98
+RM  = rm -f
+
+# ================== REGLES ==================
+all: $(NAME)
+
+$(NAME): $(OBJS)
+	$(GCC) $(OBJS) -o $(NAME)
+
+# Compile src/xxx.cpp -> objs/xxx.o (sans créer le dossier)
+$(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
+	$(GCC) -c $< -o $@
+
+clean:
+	$(RM) $(OBJS)
+
+fclean: clean
+	$(RM) $(NAME)
+
+re: fclean all
+
+.PHONY: all clean fclean re
+
+
+
+
