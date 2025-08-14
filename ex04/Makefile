@@ -1,13 +1,11 @@
 # ================== VARIABLES ==================
-NAME     = weapon
+NAME     = a.out
 
 SRC_DIR  = src/
 OBJ_DIR  = objs/
 
-SRCS = $(SRC_DIR)main.cpp \
-       $(SRC_DIR)Weapon.cpp \
-       $(SRC_DIR)HumanA.cpp \
-       $(SRC_DIR)HumanB.cpp
+SRCS = $(SRC_DIR)main.cpp
+       
 
 # Mettre les .o dans objs/
 OBJS = $(patsubst $(SRC_DIR)%.cpp,$(OBJ_DIR)%.o,$(SRCS))
