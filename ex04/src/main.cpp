@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/14 15:29:38 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/14 20:32:53 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,9 @@ int	main(int argc, char **argv)
 	file.open(argv[1], std::ios::in);
 	if (!file.is_open())
 	{
-		perror("open");
+		std::perror(argv[1]);
 		return (1);
-	}	
+	}
+	
 	return (0);
 }
