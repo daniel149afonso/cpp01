@@ -6,11 +6,11 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/01 21:42:00 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/04 00:14:37 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/14 17:53:17 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
 /*Default constructor*/
 Zombie::Zombie()

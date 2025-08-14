@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 21:42:06 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/04 01:39:32 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/14 17:53:22 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
-/*Array of zombies*/
-int	main(void)
+Zombie*	zombieHorde(int N, std::string name)
 {
-	int		N = 4;
-	Zombie*	horde;
+	Zombie* horde;
 
-	horde = zombieHorde(N, "Daniel");
-	if (horde == NULL)
-		return (1);
-	for (int i = 0; i < 4; i++)
-		horde[i].announce();
-	delete[] horde;
-	return (0);
+	horde = NULL;
+	if (N < 1)
+		return (NULL);
+	if (name.empty())
+		name = "unknown";
+	horde = new Zombie[N];
+	for (int i = 0; i < N; i++)
+	{
+		horde[i].setName(name);
+	}
+	return (horde);
 }
