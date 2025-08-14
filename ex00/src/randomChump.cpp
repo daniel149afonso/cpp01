@@ -1,23 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/01 22:59:23 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/03 21:56:56 by daniel149af      ###   ########.fr       */
+/*   Created: 2025/08/03 02:22:38 by daniel149af       #+#    #+#             */
+/*   Updated: 2025/08/14 17:44:53 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../includes/Zombie.hpp"
 
-Zombie*	newZombie(std::string name)
+void randomChump(std::string name)
 {
-	Zombie* zombie;
-
 	if (name.empty())
 		name = "unknown";
-	zombie = new Zombie(name);
-	return (zombie);
+	Zombie zombie(name);
+	zombie.announce();
 }

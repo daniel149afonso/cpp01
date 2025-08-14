@@ -1,42 +1,37 @@
 # ================== VARIABLES ==================
-# Nom de l'exécutable
-NAME = zombie
+NAME     = zombie
 
-# HEADERS
-INCLUDES = Zombie.hpp \
+SRC_DIR  = src/
+OBJ_DIR  = objs/
 
-# FICHIERS
-SRCS = main.cpp \
-	Zombie.cpp \
-	newZombie.cpp \
-	randomChump.cpp
+SRCS = $(SRC_DIR)main.cpp \
+		$(SRC_DIR)Zombie.cpp \
+		$(SRC_DIR)newZombie.cpp \
+		$(SRC_DIR)randomChump.cpp \
 
-OBJS = $(SRCS:.cpp=.o)
 
-# COMPILATION
+# Mettre les .o dans objs/
+OBJS = $(patsubst $(SRC_DIR)%.cpp,$(OBJ_DIR)%.o,$(SRCS))
+
 GCC = g++ -Wall -Werror -Wextra -std=c++98
-RM = rm -f
+RM  = rm -f
 
 # ================== REGLES ==================
-all		: $(NAME)
+all: $(NAME)
 
 $(NAME): $(OBJS)
-				$(GCC) $(OBJS) -o $(NAME)
+	$(GCC) $(OBJS) -o $(NAME)
 
-# Compilation des fichiers .o
-%.o: %.cpp
-		$(GCC) -c $< -o $@
+# Compile src/xxx.cpp -> objs/xxx.o (sans créer le dossier)
+$(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
+	$(GCC) -c $< -o $@
 
 clean:
-		$(RM) $(OBJS)
+	$(RM) $(OBJS)
 
-fclean:	clean
-		$(RM) $(NAME)
+fclean: clean
+	$(RM) $(NAME)
 
-re:	fclean all
+re: fclean all
 
 .PHONY: all clean fclean re
-	
-
-
-
