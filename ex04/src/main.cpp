@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/14 20:57:07 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/17 15:54:20 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,5 @@ int	main(int argc, char **argv)
 		std::perror(argv[1]);
 		return (1);
 	}
-	
 	return (0);
 }
