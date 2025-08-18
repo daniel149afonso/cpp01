@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/17 23:27:33 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/17 23:52:03 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 int	main(int argc, char **argv)
 {
 	std::ifstream file;
+	std::string line;
 
 	if (argc != 4)
 		return (1);
@@ -28,14 +29,14 @@ int	main(int argc, char **argv)
 	}
 	else
 	{
-		std::string line;
-		
 		while (std::getline(file, line))
 		{
-			std::strstr(line.c_str(), argv[2]);
-			std::cout << line << std::endl;
+			if (line.find(argv[2]))
+			{
+				
+				std::cout << "Occurence trouvé: "<< argv[2] << std::endl;
+			}
 		}
 	}
-	
 	return (0);
 }
