@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/19 15:40:06 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/19 16:31:24 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,13 @@ int	main(int argc, char **argv)
 			}
 			 std::streampos posCursor = file.tellg(); // position du curseur dans le fichier
 
-			if (posCursor == -1) {
+			if (posCursor == -1)
+			{
 				// On est à la fin du fichier (pas de \n après cette ligne)
 				fileOut << line;
-			} else {
+			}
+			else
+			{
 				// Il reste encore des données → il y avait un \n
 				fileOut << line << '\n';
 			}
