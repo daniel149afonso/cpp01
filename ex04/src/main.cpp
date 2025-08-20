@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/19 20:33:19 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/20 02:05:25 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,23 @@
 
 int	main(int argc, char **argv)
 {
-	std::ifstream file;
-	std::ofstream fileOut("test.replace");
+	std::ifstream inputFile;
+	std::ofstream outputFile("test.replace");
 	std::string line;
 	std::string word1 = argv[2];
 	std::string word2 = argv[3];
 
 	if (argc != 4 || word1.empty() || word2.empty())
 		return (1);
-	file.open(argv[1], std::ios::in);
-	if (!file.is_open())
+	inputFile.open(argv[1], std::ios::in);
+	if (!inputFile.is_open())
 	{
 		std::perror(argv[1]);
 		return (1);
 	}
 	else
 	{
-		while (std::getline(file, line))
+		while (std::getline(inputFile, line))
 		{
 			int pos = 0;
 			pos = line.find(argv[2], pos);
@@ -45,18 +45,20 @@ int	main(int argc, char **argv)
 				pos = line.find(word1, pos + word2.length());
 				
 			}
-			std::streampos posCursor = file.tellg(); // position du curseur dans le fichier
+			std::streampos posCursor = inputFile.tellg(); // position du curseur dans le fichier
 			if (posCursor == -1)
 			{
 				// On est à la fin du fichier (pas de \n après cette ligne)
-				fileOut << line;
+				outputFile << line;
 			}
 			else
 			{
 				// Il reste encore des données → il y avait un \n
-				fileOut << line << '\n';
+				outputFile << line << '\n';
 			}
 		}
 	}
+	inputFile.close();
+	outputFile.close();
 	return (0);
 }

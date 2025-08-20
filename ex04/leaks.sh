@@ -1,1 +1,1 @@
-valgrind --leak-check=full ./weapon
+valgrind --leak-check=full --track-fds=yes ./a.out test.txt Bonjour Naruto
