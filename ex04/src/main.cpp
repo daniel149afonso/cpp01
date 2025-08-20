@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/20 02:05:25 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/20 15:54:32 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@
 
 int	main(int argc, char **argv)
 {
-	std::ifstream inputFile;
-	std::ofstream outputFile("test.replace");
 	std::string line;
+	std::string nameFile = argv[1];
 	std::string word1 = argv[2];
 	std::string word2 = argv[3];
+	std::ifstream inputFile;
+	std::ofstream outputFile((nameFile + ".replace").c_str());
 
 	if (argc != 4 || word1.empty() || word2.empty())
 		return (1);
