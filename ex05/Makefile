@@ -1,5 +1,5 @@
 # ================== VARIABLES ==================
-NAME     = filename
+NAME     = a.out
 
 SRC_DIR  = src/
 OBJ_DIR  = objs/
