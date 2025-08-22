@@ -1,11 +1,11 @@
 # ================== VARIABLES ==================
-NAME     = a.out
+NAME     = Harl
 
 SRC_DIR  = src/
 OBJ_DIR  = objs/
 
-SRCS = $(SRC_DIR)main.cpp
-       
+SRCS = $(SRC_DIR)main.cpp \
+		$(SRC_DIR)Harl.cpp
 
 # Mettre les .o dans objs/
 OBJS = $(patsubst $(SRC_DIR)%.cpp,$(OBJ_DIR)%.o,$(SRCS))
