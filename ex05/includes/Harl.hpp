@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/21 12:51:39 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/22 15:01:59 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/25 13:46:07 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define HARL_HPP
 # include <iostream>
 
+typedef struct function_p{
+	void	*(f *);
+} f_p;
 class Harl
 {
 	private:
