@@ -1,4 +1,4 @@
-## Pointeurs de fonction:
+## Pointeur de fonction:
 Ici, tu déclares une variable f.
 
 Son type est : « pointeur sur une fonction qui retourne void et prend () (zéro paramètre) ».
@@ -11,7 +11,7 @@ void foo()
 void (*f)();
 f = &foo;
 ```
-## Tableau de pointeur de fonctions:
+## Tableau de pointeurs de fonction:
 
 ```c
 void (*f[2])() = {&foo, &foo1};
