@@ -6,13 +6,12 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/14 15:14:25 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/20 15:54:32 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/26 13:15:03 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <string>
-#include <cstring> //substr
+#include <cstring> //substr, find
 #include <fstream> //ifstream, ofstream, open,
 
 int	main(int argc, char **argv)
@@ -29,7 +28,7 @@ int	main(int argc, char **argv)
 	inputFile.open(argv[1], std::ios::in);
 	if (!inputFile.is_open())
 	{
-		std::perror(argv[1]);
+		std::perror(nameFile.c_str());
 		return (1);
 	}
 	else
@@ -37,7 +36,7 @@ int	main(int argc, char **argv)
 		while (std::getline(inputFile, line))
 		{
 			int pos = 0;
-			pos = line.find(argv[2], pos);
+			pos = line.find(word1, pos);
 			//Parcours toute la ligne pour trouver les occurences
 			while (pos != (int)std::string::npos)
 			{
