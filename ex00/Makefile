@@ -24,6 +24,7 @@ $(NAME): $(OBJS)
 
 # Compile src/xxx.cpp -> objs/xxx.o (sans créer le dossier)
 $(OBJ_DIR)%.o: $(SRC_DIR)%.cpp
+	mkdir -p $(OBJ_DIR)
 	$(GCC) -c $< -o $@
 
 clean:

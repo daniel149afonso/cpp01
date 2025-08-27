@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 00:19:33 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/04 01:37:02 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/08/27 13:33:52 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	main()
 
 	std::cout << "Memory Addreses:" << std::endl;
 	std::cout << &value << std::endl;
-	std::cout << &stringPTR << std::endl;
+	std::cout << stringPTR << std::endl;
 	std::cout << &stringREF << std::endl << std::endl;
 
 	std::cout << "Values:" << std::endl;
