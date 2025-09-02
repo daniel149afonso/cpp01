@@ -6,7 +6,7 @@
 /*   By: daniel149afonso <daniel149afonso@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 00:19:33 by daniel149af       #+#    #+#             */
-/*   Updated: 2025/08/27 13:33:52 by daniel149af      ###   ########.fr       */
+/*   Updated: 2025/09/02 15:55:28 by daniel149af      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 toujours lié à l’objet initial.*/
 int	main()
 {
-	std::string	value = "HI THIS IS value";
+	std::string	value = "HI THIS IS BRAIN";
 	std::string	*stringPTR = &value;
 	std::string& stringREF = value;
 
