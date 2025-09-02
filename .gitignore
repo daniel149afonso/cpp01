@@ -1,9 +1,9 @@
-.vscode
 *.out
 *.o
+*.replace
+.vscode
 zombie
 brain
 weapon
 filename
 Harl
-*.replace
