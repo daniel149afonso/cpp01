@@ -5,7 +5,7 @@ Son type est : « pointeur sur une fonction qui retourne void et prend () (zéro
 ```c
 void foo()
 {
-    return;
+    printf("Winter is coming!");
 }
 
 void (*f)();
