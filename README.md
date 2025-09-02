@@ -84,8 +84,6 @@ But : Découvrir la différence entre allocation sur la stack et sur le heap.
 
 	- Appelle directement la bonne méthode sans if/else multiples.
 
-Exemple:
-
 	```c
 	void (Harl::*fptr[])() = { &Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
 
