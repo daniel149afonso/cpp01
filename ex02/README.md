@@ -7,5 +7,5 @@
 - Exemple: int *b = &a;
 
 ## Référence
-- C’est un alias d’une variable existante (un autre nom pour le même objet). Si l'alias change la variable à laquelle il est lié aussi.
+- C’est un alias d’une variable existante (un autre nom pour le même objet). Si l'alias change la variable à laquelle il est lié aussi. Il doit obligatoirement etre declare et assigne.
 - Exemple: int& c = a;
