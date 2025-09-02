@@ -8,13 +8,13 @@ void foo()
     printf("Winter is coming!");
 }
 
-void (*f)();
-f = &foo;
+void (*fptr)();
+fptr = &foo;
 ```
 ## Tableau de pointeurs de fonction:
 
 ```c
-void (*f[2])() = {&foo, &foo1};
+void (*fptr[2])() = {&foo, &foo1};
 
 ```
 ## Warning:
