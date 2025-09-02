@@ -1,5 +1,5 @@
 ## Pointeur de fonction:
-Ici, tu déclares une variable f.
+Ici, tu déclares une pointeur f.
 
 Son type est : « pointeur sur une fonction qui retourne void et prend () (zéro paramètre) ».
 ```c
