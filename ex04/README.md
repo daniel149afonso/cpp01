@@ -27,4 +27,4 @@ Elle prend 2 paramètres l'index de début et le nombre à parcourir.
 Retourne la sous-string.
 
 ### tellg():
-Elle retourne la position courante du curseur de lecture dans le fichier.
+Elle retourne la position courante du curseur de lecture dans le fichier. Retourne -1 si le curseur est a la fin du fichier EOF.
